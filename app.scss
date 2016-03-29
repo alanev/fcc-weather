@@ -5,9 +5,11 @@
 :root{
     --color_primary: rgb(255,82,82);
     --color_gray: #9e9e9e;
+    --gutter: 5vw;
 }
-@custom-media --phone (max-width: 767px); 
 
+@custom-media --phone (max-width: 479px);
+@custom-media --phone-small (max-width: 359px);
 
 a[class],
 a:hover{
@@ -45,16 +47,14 @@ a[class]{
             align-items: center;
             justify-content: space-between;
             
-            @media (--phone) {
-                padding: 0 1rem;
-            }
+            padding: 0 var(--gutter);
             
             svg{
                 fill: white
             }
         }
         &links{
-            margin-left: 2rem;
+            margin-left: var(--gutter);
         }
         &title{
             flex: 1;
@@ -63,7 +63,8 @@ a[class]{
             font-size: 2rem;
             
             @media (--phone) {
-                font-size: 1rem;
+                font-size: 1.5rem;
+                line-height: 1;
             }
         }
         &content{
@@ -81,9 +82,10 @@ a[class]{
         &footer{
             align-items: center;
             
-            padding: 1rem;
+            padding: 1rem var(--gutter);
             
             @media (--phone) {
+                flex-direction: column;
                 justify-content: center;
             }
         }
