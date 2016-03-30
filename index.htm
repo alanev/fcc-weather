@@ -37,7 +37,13 @@
         </header>
         <main class="page__content page__content_main">
             <!--Insert content here-->
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur architecto, nemo iste voluptatem illo quo consequuntur ab aliquam suscipit. Odit doloremque consequatur natus ut voluptates dignissimos ab, ratione voluptatum, fuga!
+            <div class="weather" ng-app="LocalWeather">
+                <div ng-controller="WeatherCtrl">
+                    <h2 class="weather__location">{{location}}</h2>
+                    <h3 class="weather__temp" ng-click="toggleTemp()">{{temp}}</h3>
+                    <div class="weather__icon {{type}}" ng-bind-html="icon"></div>
+                </div>
+            </div>
         </main>
         <footer class="mdl-mini-footer page__footer">
             <div class="mdl-mini-footer__left-section">
