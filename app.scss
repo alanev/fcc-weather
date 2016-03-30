@@ -2,6 +2,8 @@
 @use cssnext;
 @use autoprefixer;
 
+/* common styles */
+
 :root{
     --color_primary: rgb(255,82,82);
     --color_gray: #9e9e9e;
@@ -76,6 +78,10 @@ a[class]{
                 &main{
                     flex: 1 0 0;
                     padding: 1rem 1rem;
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
                 }
             }
         }
