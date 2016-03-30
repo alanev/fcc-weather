@@ -1,0 +1,194 @@
+/* common styles */
+
+a[class],
+a:hover{
+    text-decoration: none;
+}
+a[class]{
+    color: inherit;
+}
+.mdl-layout__header{
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+[class*=socicon]{
+    font-size: 24px;
+    font-size: 1.5rem;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+[class*=socicon]:not(:first-child){
+    margin-left: 16px;
+    margin-left: 1rem;
+}
+.page{
+    min-height: 100vh;
+}
+.page__sprite{
+    position: absolute;
+    left: -9999px;
+}
+.page__header{
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 5vw;
+}
+.page__header svg{
+    fill: white
+}
+.page__links{
+    margin-left: 5vw;
+}
+.page__title{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: 0;
+    font-size: 32px;
+    font-size: 2rem;
+}
+@media (max-width: 479px) {
+
+    .page__title{
+        font-size: 1.5rem;
+        line-height: 1;
+    }
+}
+.page__content{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 16px;
+    padding: 0 1rem;
+}
+.page__content_main{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 0;
+        -ms-flex: 1 0 0;
+            flex: 1 0 0;
+    padding: 16px 16px;
+    padding: 1rem 1rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.page__footer{
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+    padding: 16px 5vw;
+    padding: 1rem 5vw;
+}
+@media (max-width: 479px) {
+
+    .page__footer{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+}
+.page__links,
+        .page__social{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 24px;
+    font-size: 1.5rem;
+}
+@media (max-width: 479px) {
+
+    .page__social{
+        margin-top: 1rem;
+    }
+}
+.page__social svg{
+    fill: #9e9e9e;
+}
+
+/* weather module */
+.weather{
+    height: 100%;
+    text-align: center;
+    
+    display: -webkit-box;
+    
+    display: -webkit-flex;
+    
+    display: -ms-flexbox;
+    
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.weather__icon svg{
+    max-width: 200px;
+    max-height: 200px;
+}
+.weather__icon.sun{
+    fill: yellow;
+}
+.weather__icon.light{
+    fill: yellow;
+}
+.weather__icon.snow{
+    fill: lightblue;
+}
+.weather__icon.drizzle path,.weather__icon.rain path{
+    fill: lightblue;
+}
+.weather__icon.drizzle rect,
+                .weather__icon.drizzle polygon,
+                .weather__icon.rain rect,
+                .weather__icon.rain polygon{
+    fill: dodgerblue;
+}
+.weather__temp{
+    cursor: pointer;
+    color: lightcoral;
+    -webkit-transition: .3s;
+            transition: .3s;
+}
+.weather__temp:hover{
+    color: initial;
+}
