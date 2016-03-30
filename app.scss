@@ -108,3 +108,52 @@ a[class]{
         }
     }
 }
+
+/* weather module */
+.weather{
+    height: 100%;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    &__{
+        &icon{
+            svg{
+                max-width: 200px;
+                max-height: 200px;
+            }
+            
+            &.sun{
+                fill: yellow;
+            }
+            &.light{
+                fill: yellow;
+            }
+            &.snow{
+                fill: lightblue;
+            }
+            &.drizzle,
+            &.rain{
+                path{
+                    fill: lightblue;
+                }
+                rect,
+                polygon{
+                    fill: dodgerblue;
+                }
+            }
+        }
+        &temp{
+            cursor: pointer;
+            
+            color: lightcoral;
+            transition: .3s;
+            
+            &:hover{
+                color: initial;
+            }
+        }
+    }
+}
