@@ -1,7 +1,7 @@
 {
-  "name": "fcc-boilerplate-front",
+  "name": "fcc-weather",
   "version": "1.0.0",
-  "description": "Boilerplate for FreeCodeCamp Front End apps.",
+  "description": " Local Weather App for FreeCodeCamp.",
   "main": "index.js",
   "scripts": {
     "styles": "postcss -u postcss-use --postcss-use.modules * -o app.css app.scss",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alanev/fcc-front-boilerplate.git"
+    "url": "git+https://github.com/alanev/fcc-weather.git"
   },
   "keywords": [
     "boilerplate",
@@ -28,9 +28,9 @@
   "author": "e@alanev.ru",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alanev/fcc-front-boilerplate/issues"
+    "url": "https://github.com/alanev/fcc-weather/issues"
   },
-  "homepage": "https://github.com/alanev/fcc-front-boilerplate#readme",
+  "homepage": "https://github.com/alanev/fcc-weather#readme",
   "devDependencies": {
     "autoprefixer": "^6.3.5",
     "babel-cli": "^6.6.5",
